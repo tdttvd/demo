@@ -1,0 +1,34 @@
+Just a simple note what we learn in this git course
+git init
+git status
+git add
+git commit
+
+git log
+git show
+git diff
+
+working directory
+staging area
+repository
+
+git checkout
+git reset
+
+Branching & Merging
+
+Branching:
+  Show all branches:
+    git branch
+  Create new branch:
+    git checkout -b <branch>
+  Change working branch:
+    git checkout <branch>
+  Delete a branch:
+    git branch -d <branch>
+
+Merging: Merge A <-- B (Merge B into A)
+  Step 1: Change working branch to A
+    git branch A
+  Step 2: Merge A <-- B
+    git merge B
