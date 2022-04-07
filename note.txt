@@ -1,6 +1,0 @@
-git init: initialization
-git status: check status of files
-git add: add new file
-git commit: commit
-
-git log
