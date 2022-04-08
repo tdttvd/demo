@@ -37,3 +37,47 @@ Merging: Merge A <-- B (Merge B into A)
 git reset --soft <commit id>
 git reset --mixed <commit id>
 git reset --hard <commit id>
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Git revert ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git revert <commit id>
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ .gitignore ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Ignore some files when you commit. It will not be checked when you
+use git status
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Github ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Add git project to your repository on Github:
+  Add origin ??
+    git remote add origin <link to your repo>
+    git remote -v
+  Use this for the first time:
+    git push -u origin master
+  After the first time:
+    git push
+
+~~~~~~~~~~~~~~~~~~~~~~~ Git credential config ~~~~~~~~~~~~~~~~~~~~~~~
+git config --global credential.helper store
+^^^ not recommended (~/.git-credentials)
+
+git config --global credential.helper "cache --timeout=18000"
+^^^ timeout after 5 hours
+
+Google: "gnome-keyring" git ssh
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~ Git clone & pull ~~~~~~~~~~~~~~~~~~~~~~~~~~
+Clone from remote repo -> local repo (Initialize local repo):
+  git clone <link to remote repo>
+Pull new commits from remote repo:
+  git pull
+
+
+1. git checkout -b <feature_branch>
+2. git push origin <branch>
+3. create a pull request on Github
+4. review code
+  4.1. review code online (github)
+  4.2. fetch branch into local to test offline (optional)
+  4.3. approve the pull request
+5. merge to master
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Pull Request ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
