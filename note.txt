@@ -15,7 +15,7 @@ repository
 git checkout
 git reset
 
-Branching & Merging
+~~~~~~~~~~~~~~~~~~~~~~~~ Branching & Merging ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Branching:
   Show all branches:
@@ -32,3 +32,8 @@ Merging: Merge A <-- B (Merge B into A)
     git branch A
   Step 2: Merge A <-- B
     git merge B
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Git reset ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git reset --soft <commit id>
+git reset --mixed <commit id>
+git reset --hard <commit id>
